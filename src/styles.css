@@ -1,0 +1,383 @@
+@import "tailwindcss";
+/* Global Styles */
+body {
+  background-color: #0f172a;
+  color: #e2e8f0;
+  margin: 0;
+justify-content: center;
+  align-items: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  overflow-x: hidden;
+}
+
+#welcome-section{font-size:large;}
+/* Sun Effect */
+/* .sun {
+  height: 600px;
+  width: 600px;
+  background: radial-gradient(circle, #141e3d 0%, rgba(255, 14, 14, 0) 70%);
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  transform: scale(200%);
+} */
+
+/* Header Styles */
+#header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+#nav-bar {
+  position: fixed;
+  top: 10vh;
+  right: 80px;
+  padding-right: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.projects-active {
+  position: absolute !important;
+  right: 0px;
+}
+
+.projects-nav {
+  position: absolute !important;
+
+}
+
+
+#nav-bar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#nav-bar li {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5px;
+}
+
+#nav-bar a {
+  color: #5b6a80;
+  text-decoration: none;
+  padding:5px 10px;
+  display: inline-block;
+  position: relative;
+}
+
+#nav-bar a::before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  bottom: 13px;
+  width: 30px;
+  height: 2px;
+  background-color: #5b6a80;
+  transition: width 0.2s ease;
+}
+
+/* Apply these styles on hover and when the link is active */
+#nav-bar a:hover,
+#nav-bar a.active {
+  color: #e2e8f0;
+  transform: translateX(30px);
+}
+
+#nav-bar a:hover::before,
+#nav-bar a.active::before {
+  width: 60px;
+  background-color: #e2e8f0;
+  transform: translateX(-30px);
+}
+
+
+
+
+/* Footer Styles */
+#contacts {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.fab {
+  font-size: 24px;
+  margin: auto;
+  color: #5b6a80;
+  padding: 10px;
+}
+
+.fab:hover {
+  color: #e2e8f0;
+}
+
+/* Content Styles */
+.content {
+  text-align: center;
+  margin: auto;
+  padding-top: 150px;
+  color: #e2e8f0;
+
+}
+
+.content .line {
+  border: none;
+  border-bottom: 5px solid #5b6a80;
+  margin: 0 auto 20px; /* Center horizontally and add margin-bottom */
+  width: 30px;
+}
+.content h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 55px;
+  margin-bottom: 20px;
+}
+
+.content p {
+  max-width: 600px;
+  margin: auto;
+  font-size: 16px;
+}
+
+/* About Me Styles */
+.about_me { 
+  display: flex;
+  margin: auto;
+  padding: 1px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.about_me .detail {
+  width: 60vw;
+  height: 43vh;
+
+  margin: 2vw;
+  border-radius: 5px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.about_me .detail:hover {
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+.about_me p {
+  padding: 10px 5px;
+  text-align: center;
+  margin: 8px auto;
+  font-size: min(2vw, 18px);
+  font-weight: 100;
+}
+
+.about_me .skills {
+  width: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.skills img {
+  width: 30vw;
+}
+
+.skills img:hover {
+  width: 35vw;
+}
+
+/* Projects Styles */
+.project {
+  height: 400px;
+  width: 80vw;
+  max-width: 1200px;
+  margin: 100px auto;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.project_anchor {
+  color: #e2e8f0;
+  text-decoration: none;
+}
+
+.project img {
+  width: 40vw;
+  padding: 30px;
+}
+
+.project h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+}
+
+.project:hover {
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+.project:hover h2 {
+  color: aqua;
+}
+
+.project_description {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  color: #e2e8f0;
+}
+
+/* Contact Form Styles */
+.form {
+  padding: 10px 50px;
+  height: 50vh;
+  max-width: 800px;
+  width:70vw;
+  border-radius: 5px;
+  margin: 20px auto;
+}
+
+.form:hover {
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+form {
+  margin: 0 auto;
+}
+
+label,
+input,
+textarea {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 15px;
+  width: 100%;
+  color: #e2e8f0;
+  padding: 1px;
+}
+
+label {
+  color: #55d5d5;
+}
+
+input,
+textarea {
+  background-color: #193755;
+  border: none;
+  font-size: 15px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #e2e8f074;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+}
+
+.submit-button {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+.submit-button button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 30px;
+
+}
+
+.submit-button button:hover {
+  color: #55d5d5;
+}
+
+.submit-button.submitted {
+  color: #bcfd49;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+
+
+  #nav-bar {
+    top: 10vh;
+    right: 0px;
+    font-size: 10px;
+  }
+  
+#nav-bar li {
+  padding-top: 2px;
+}
+
+
+#nav-bar a::before {
+
+  height: 1px;
+
+}
+
+#welcome-section{font-size:small; max-width: 80vw;}
+
+.project{font-size: 3vw;display: flex; flex-direction: column ; justify-content: center;padding: 3vw;overflow: scroll;}
+
+.contact{padding-top: 0vh;}
+  .content h1 {
+    font-size: 6vw;
+    margin-bottom: 0px;
+  }
+
+  .content p {
+    font-size: 2vw;
+    width: 70vw;
+  }
+
+  .about_me {
+    flex-direction: column;
+  }
+
+  .about_me .detail {
+    background-color: rgba(255, 255, 255, 0.06);
+    order: 2;
+    margin: auto;
+    height: 60vw;
+  }
+
+  .skills img {
+    width: 60vw;
+    height: auto;
+    margin: auto;
+  }
+
+  .skills img:hover {
+    width: 65vw;
+    height: auto;
+  }
+
+  .projects{padding-top: 20vh;}
+  .project {
+    background-color: rgba(255, 255, 255, 0.06);
+    height: 80vw;
+  }
+
+  .project img {
+    width: 60vw;
+  }
+
+  .form {
+    background-color: rgba(255, 255, 255, 0.06);
+    
+    padding: 50px;
+    height: 35vh; 
+  }
+}
