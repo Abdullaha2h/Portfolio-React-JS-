@@ -27,7 +27,7 @@ const About = () => {
           </p>
         </div>
 
-        <div className="bg-white-900 scale-80 flex justify-center items-center">
+        <div className="MERN bg-white-900 scale-90 flex justify-center items-center">
       <MernStackDiagram />
     </div>
 

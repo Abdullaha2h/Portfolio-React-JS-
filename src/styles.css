@@ -34,7 +34,7 @@ justify-content: center;
 #nav-bar {
   position: fixed;
   top: 10vh;
-  right: 80px;
+  right: 70px;
   padding-right: 20px;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
@@ -111,7 +111,7 @@ justify-content: center;
 }
 
 .fab {
-  font-size: 24px;
+  font-size: 30px;
   margin: auto;
   color: #5b6a80;
   padding: 10px;
@@ -153,20 +153,19 @@ justify-content: center;
   display: flex;
   margin: auto;
   padding: 1px;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
+  justify-content: left;
+  align-items: left;
+ 
 }
 
 .about_me .detail {
   width: 60vw;
-  height: 43vh;
-
+  height: 50%;
   margin: 2vw;
   border-radius: 5px;
 
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
 }
 
 .about_me .detail:hover {
@@ -177,7 +176,7 @@ justify-content: center;
   padding: 10px 5px;
   text-align: center;
   margin: 8px auto;
-  font-size: min(2vw, 18px);
+  font-size: min(3vw, 18px);
   font-weight: 100;
 }
 
@@ -240,7 +239,7 @@ justify-content: center;
 /* Contact Form Styles */
 .form {
   padding: 10px 50px;
-  height: 50vh;
+  max-height: 50vh;
   max-width: 800px;
   width:70vw;
   border-radius: 5px;
@@ -307,30 +306,17 @@ textarea::placeholder {
 }
 
 /* Responsive Styles */
-@media only screen and (max-width: 600px) {
-
+@media only screen and (max-width: 1000px) {
 
   #nav-bar {
-    top: 10vh;
-    right: 0px;
-    font-size: 10px;
-  }
-  
-#nav-bar li {
-  padding-top: 2px;
+    right: 1px;scale:0.8; top:40px;}
+
+#welcome-section{max-width: 70vw; font-size: medium;}
+
+.project{font-size: 3vw;display: flex; flex-direction: column ; align-content: center;padding: 3vw;overflow: scroll;}
+.project h2 {
+  font-size: 20px;
 }
-
-
-#nav-bar a::before {
-
-  height: 1px;
-
-}
-
-#welcome-section{font-size:small; max-width: 80vw;}
-
-.project{font-size: 3vw;display: flex; flex-direction: column ; justify-content: center;padding: 3vw;overflow: scroll;}
-
 .contact{padding-top: 0vh;}
   .content h1 {
     font-size: 6vw;
@@ -350,7 +336,13 @@ textarea::placeholder {
     background-color: rgba(255, 255, 255, 0.06);
     order: 2;
     margin: auto;
-    height: 60vw;
+    width: 70vw;
+
+    height: 240px;
+    overflow: scroll;
+    padding: 5px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
   }
 
   .skills img {
@@ -378,6 +370,14 @@ textarea::placeholder {
     background-color: rgba(255, 255, 255, 0.06);
     
     padding: 50px;
-    height: 35vh; 
+    height: 42vh; 
+  
   }
+
+  label,
+input,
+textarea {
+  font-size: 13px;}
+
+  .MERN{padding:px ; scale: 0.8;}
 }
