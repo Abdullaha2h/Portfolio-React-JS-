@@ -309,7 +309,7 @@ textarea::placeholder {
 @media only screen and (max-width: 1000px) {
 
   #nav-bar {
-    right: 1px;scale:0.8; top:40px;}
+    right: 1px;scale:0.8; top:10px;}
 
 #welcome-section{max-width: 70vw; font-size: medium;}
 
